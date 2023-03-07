@@ -1,22 +1,57 @@
-import React from 'react'
+import React from 'react';
 
-const App = ()=> {
+import { Counter } from './features/counter/counter';
+
+
+function App() {
   return (
     <div className="App">
-      <nav>
-        <section>
-          <h1>Redux Fundamentals Example</h1>
-
-          <div className="navContent">
-            <div className="navLinks"></div>
-          </div>
-        </section>
-      </nav>
-      <section>
-        <h2>Welcome to the Redux Fundamentals example app!</h2>
-      </section>
+      <header className="App-header">
+        <Counter />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <span>
+          <span>Learn </span>
+          <a
+            className="App-link"
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React
+          </a>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux
+          </a>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux-toolkit.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux Toolkit
+          </a>
+          ,<span> and </span>
+          <a
+            className="App-link"
+            href="https://react-redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React Redux
+          </a>
+        </span>
+      </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
